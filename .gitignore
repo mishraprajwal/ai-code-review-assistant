@@ -17,6 +17,9 @@ target/
 *.ipr
 *.iws
 
+# GitHub directory
+.github/
+
 # Python
 __pycache__/
 *.py[cod]
