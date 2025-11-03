@@ -24,7 +24,7 @@ public class CodeReviewController {
     @PostMapping
     public ResponseEntity<String> reviewCode(@RequestBody String code) {
         // Call AI service
-        String aiUrl = "http://localhost:5001/review"; // Assuming Python service runs on 5001
+        String aiUrl = "http://localhost:5002/review"; // Assuming Python service runs on 5002
         ResponseEntity<String> response = restTemplate.postForEntity(aiUrl, code, String.class);
         return response;
     }
